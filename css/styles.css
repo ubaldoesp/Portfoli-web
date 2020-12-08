@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+section {
+    padding: 50px 0;
+}
+
+/* 
+ ======================== Navigation =============================
+*/
+.nav {
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    float: left;
+    margin-right: 30px;    
+}
+
+nav ul li {
+    display: inline-block;
+    color: #fff;
+    font-size:25px; 
+    margin:0 5px;
+}
+
+.nav li a {
+    color: #ffb400;
+    font-size: 20px;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/*.nav ul.hide{
+    display: none;
+}*/
+/*#menu {
+    top: 40px;
+    position: fixed;
+    height: 100vh;
+    width: 200px;
+    background-color: black;
+    color: white;
+    right: 0;
+}*/
+
+/*ul li a{
+    text-decoration: none;
+}*/
+
+/* 
+ ======================== Banner =============================
+*/
+.banner{
+    background-image: url(https://fondosmil.com/fondo/8516.jpg);
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.459);
+    height: 100%;
+    
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(158, 158, 158, 0.38);
+    background-image: url('../img/profile.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+/* 
+ ======================== About =============================
+*/
+.posts {
+    background-color: rgb(5, 5, 5);
+}
+
+ul li {
+    list-style:none;
+    margin: 20px;
+}
+
+span { 
+    padding-left: 5px;
+}
+
+.about-list{
+    font-size: 15px;
+}
+
+.about-list .title {
+    opacity: .8;
+}
+
+.card-skill{
+    color: #fff;
+    border: 1px solid #fdfbfb;
+    height: 100%;
+}
+.card-skill .card-body_skill{
+    padding: 10px 60px; 
+}
+/*=================== Services =====================================*/
+.projects{
+    background: #000;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/******************** Contact **************************************/
+.contact{
+    background-color: #000;
+}
+.contactform input[type=text],
+.contactform input[type=email] {
+  border: 1px solid rgb(247, 246, 246);
+  width: 100%;
+  background: #fdfbfb;
+  color: #fff;
+  padding: 11px 26px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  transition: .3s;
+}
+
+.contactform textarea {
+  border: 1px solid rgb(253, 251, 251);
+  background: #f8f6f6;
+  color: rgb(14, 13, 13);
+  width: 100%;
+  padding: 12px 26px;
+  margin-bottom: 20px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 30px;
+  transition: .3s;
+  resize: none;
+}
+
+.contactform .form-message {
+  margin: 24px 0;
+}
+
+.contactform .output_message {
+  display: block;
+  color:#000;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 30px;
+}
+/******************** footer ***************************************/
+footer{
+    background-color: rgba(12, 12, 12, 0.92);
+}
+.social-media a{
+    padding: 20px;
+    text-decoration: none;
+    color: #ffb400;
+}
+/*
+======================== Components =============================
+*/
+.logo{
+    color: #ffb400;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 20px;
+    padding: 0 80px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.primary-button {
+    background-color: #0d1568;
+    color: white;
+    padding: 8px 15px;
+    border: 0;
+}
+
+.card {
+    /*box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;*/
+    border-radius: 5px;
+    border: solid #252525;
+    height: 150px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.card .card-body {
+    padding: 10px;
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    
+}
+
+svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+}
+svg circle {
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+svg circle:nth-child(2) {
+    stroke-dasharray: 230;
+    stroke-dashoffset: 230;
+
+}
+
+.card-skill:nth-child(1) svg circle:nth-child(2) {
+    stroke:#ffb400;
+}
+
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background-color: #222;
+    
+}
+
+.percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffb400;
+}
+
+.btn {
+    box-shadow: none !important;
+    border-radius: 26px;
+    font-weight: 500;
+    height: 46px;
+    line-height: 46px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color:#ffb400;
+    padding: 0 40px;
+    outline: none !important;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    border: 0;
+}
+/*
+======================== Helpers =============================
+*/
+.primary-text {
+    color: #e9e9ec;
+}
+
+.second-text{
+    color: seashell;
+}
+.center-text {
+    text-align: center;
+}
+.space-top {
+    margin-top: 20px;
+}
+.space-bottom{
+    margin-bottom: 10px;
+}
+.space-left {
+    margin-left: 350px;
+}
+.align-text {
+    text-align: center;
+}
+.about {
+    color:#ffb400;
+}
+.separator{
+    border-top: 1px solid rgb(94, 97, 94);
+    margin: 70px auto 55px;
+    width: 600px;
+
+}
+i {
+    color: gray;
+}
