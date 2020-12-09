@@ -43,7 +43,7 @@ nav ul li {
 
 @media screen and (max-width: 865px) {
     .nav li a {
-        font-size: 15px;
+        font-size: 13px;
     }
     .logo {
         font-size: 20px;
@@ -72,7 +72,7 @@ nav ul li {
 */
 .banner{
     background-image: url(https://fondosmil.com/fondo/8516.jpg);
-    height: 800px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     
